@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Webapplications: from concept to code</title>
+
+        <meta name="description" content="Webapplications: from concept to code">
+        <meta name="author" content="Peter Peerdeman">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/pp-reveal.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+        <link rel="stylesheet" href="lib/css/googlecode.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section class="pp-title">
+                    <h3>Webapplications: <br/>from concept to code</h3>
+                    <p>
+                        <img src="images/peter2.png" alt="">
+                    </p>
+                    <img src="images/logo-white.png"/>
+                    <p>
+                        <a href="http://twitter.com/peterpeerdeman">@peterpeerdeman</a>
+                    </p>
+                </section>
+                <section >
+                    <section data-background="images/payoff-slide.png">
+                    </section>
+                </section>
+                <section>
+                    <section data-background="images/notification.gif">
+                    </section>
+                    <section>
+                        <video id="partup-screendemo" controls="controls" autoplay name="partup-screendemo" src="videos/partup-screendemo.mov#t=23"></video>
+                    </section>
+                </section>
+                <section>
+                    <ul>
+                        <h3>What should we talk about?</h3>
+                        <div class="fragment">
+                            <li>Development Process?</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Backend Code?</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Frontend Code?</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Dev-ops?</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Careers?</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Consultancy?</li>
+                        </div>
+                    </ul>
+                </section>
+                <section>
+                    <h3><a href="http://endpoint15.meteor.com">endpoint15.meteor.com</a></h3>
+                    <iframe style="height:640px" src="http://endpoint15.meteor.com" height="100%" width="100%"></iframe>
+                </section>
+                <section>
+                    <h2>How to build an app</h2>
+                    <p>Anyone?</p>
+                </section>
+                <section>
+                    <h3>1. concept</h3>
+                    (bp partup image)
+                </section>
+                <section>
+                    <h3>2. interaction design</h3>
+                    design / interactieontwerp (frankwatching)
+                </section>
+                <section>
+                    <h3>3. technisch advies / architectuur</h3>
+                    technisch advies / architectuur (leefplezier)
+                </section>
+                <section>
+                    <h3>4. Implementatie / SCRUM</h3>
+                    SCRUM / implementatie
+                    planning
+                    git
+                    review
+                </section>
+                <section>
+                    <h3>4. Infrastructure / Deployment </h3>
+                    (ansible script)
+                </section>
+                <section>
+                    <h3>5. Analytics</h3>
+                    Google Analytics
+                    New relic monitoring
+                </section>
+
+                <section>
+                    <h2>How to code?</h2>
+                    <div class="fragment">
+                        <p>Anyone?</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Serverside rendered</h2>
+                    <ul>
+                        <div class="fragment">
+                            <li>All logic and data on backend</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Stateless</li>
+                        </div>
+                        <div class="fragment">
+                            <li>HTML, no javascript</li>
+                        </div>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Serverside rendered</h3>
+                    diagram
+                </section>
+                <section>
+                    <h2>example server side rendered code</h2>
+                    <p>Lifely blog (symfony2 php)</p>
+                </section>
+                <section>
+                    <h2>RESTful backends</h2>
+                    <ul>
+                        <div class="fragment">
+                            <li>Defacto standard</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Endpoints exposing data</li>
+                        </div>
+                        <div class="fragment">
+                            <li>JSON/XML over HTTP</li>
+                        </div>
+                    </ul>
+                </section>
+                <section>
+                    <h3>RESTful backends</h3>
+                    diagram
+                </section>
+                <section>
+                    <h2>example REST api code</h2>
+                    <p>Leefplezier app API (symfony2 php)</p>
+                </section>
+                <section>
+                    <h2>example REST api code</h2>
+                    <p>Flickr image api query (nodejs)</p>
+                </section>
+                <section>
+                    <h2>Single page applications</h2>
+                    <ul>
+                        <div class="fragment">
+                            <li>AJAX / XHR requests</li>
+                        </div>
+                        <div class="fragment">
+                            <li>Consume REST endpoints</li>
+                        </div>
+                        <div class="fragment">
+                            <li>MVC model to render templates</li>
+                        </div>
+                    </ul>
+                </section>
+                <section>
+                    <h2>example SPA code</h2>
+                    <p>Leefplezier app code (angular)</p>
+                </section>
+                <section>
+                    <h2>Real-time applications</h2>
+                    <ul>
+                        <div class="fragment">
+                            <li>No HTTP / REST / Request-Response</li>
+                        </div>
+                        <div class="fragment">
+                            <li>JSON over bi-directional websockets</li>
+                        </div>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Real-time applications</h3>
+                    diagram
+                </section>
+                <section>
+                <section>
+                    <h2>example realtime code (meteor js)</h2>
+                    <p><img width=300 src="images/endpointcon-map.png"/></p>
+                    <p><a href="https://github.com/peterpeerdeman/ddp-the-real-time-api-for-web-applications/tree/gh-pages/examples/endpointcon-map">endpointcon-map meteor example on github</a></p>
+                </section>
+                <section>
+                    <h2>What I ask of you?</h2>
+                    <div class='fragment'>
+                        <h3>Give webapplications a try!</h3>
+                    </div>
+                </section>
+                <section>
+                    <h3>Gettings started</h3>
+                    <ul>
+                        <div class='fragment'>
+                            <li>Server side rendering: <a href="https://symfony.com/">Symfony2 (php)</a></li>
+                        </div>
+                        <div class='fragment'>
+                            <li>Single page applications: <a href="https://docs.angularjs.org/misc/started">Angular (Javascript MVC)</a></li>
+                        </div>
+                        <div class='fragment'>
+                            <li>Real-time applications: <a href="https://www.meteor.com/install">MeteorJS (Javascript Full stack)</a></li>
+                        </div>
+                        <!--
+                        <div class='fragment'>
+                            <li>Internet of things: <a href="https://www.arduino.cc/en/Guide/HomePage">Arduino (embedded devices)</a></li>
+                        </div>
+                        -->
+                    </ul>
+                </section>
+                <section class="pp-title">
+                    <h2>Thank you for your attention</h2>
+                    <br>
+                    <p><a href="https://github.com/peterpeerdeman/webapplications-from-concept-to-code">https://github.com/peterpeerdeman/webapplications-from-concept-to-code</a></p>
+                    <br>
+                    <p>
+                        <a href="http://twitter.com/peterpeerdeman">@peterpeerdeman</a>
+                    </p>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
