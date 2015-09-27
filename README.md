@@ -1,5 +1,3 @@
-The slides can be found on http://peterpeerdeman.github.io/ddp-the-real-time-api-for-web-applications
+The slides can be found on http://peterpeerdeman.github.io/webapplications-from-concept-to-code/
 
-This conference talk was given on the 4th of September 2015 at [EndpointCon](http://www.endpointcon.com)
-
-The code examples can be found in the examples folder
+This guest lecture was given on the 28th of September 2015 at [AvansHogeschool](http://www.avans.nl/)
