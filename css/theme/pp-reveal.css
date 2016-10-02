@@ -10,25 +10,9 @@
  *********************************************/
 body {
   color: #fff;
-  background: rgb(64, 77, 102);
-  background-color: rgb(64, 77, 102);
+  background-color: #4E1D9B;
 }
 
-@font-face {
-  font-family: FuturaStd-Book;
-  src: url("/fonts/FuturaStd-Book.otf") format("opentype");
-}
-
-@font-face {
-  font-family: FuturaStd-Medium;
-  src: url("/fonts/FuturaStd-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: FuturaStd-Heavy;
-  src: url("/fonts/FuturaStd-Heavy.otf") format("opentype");
-  font-weight: 600;
-}
 ::selection {
   color: white;
   background: #26351c;
@@ -36,10 +20,13 @@ body {
 
 
 .reveal {
-  font-family: FuturaStd-Medium, "Book Antiqua", Palatino, FreeSerif, serif;
-  font-size: 40px;
+  font-family:'Avenir Next', sans-serif;
+  font-size: 43px;
   font-weight: 200;
   letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 /*********************************************
@@ -74,6 +61,8 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   text-transform: uppercase;
+  font-style: italic;
+  font-weight:700;
 }
 
 .reveal h1 {
@@ -83,18 +72,43 @@ body {
 
 .reveal h2 {
     font-size:2em;
-    color: rgb(159,166,179);
+}
+
+.reveal h3 {
+    font-size:1.4em;
+}
+
+.pp-payoff svg {
+    width:800px;
+    fill: #fff;
+}
+
+.pp-payoff h3 {
+    font-size:2em;
+}
+
+.pp-title:before {
+    background-color: rgba(108,30,231,.9);
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 .pp-title h1 {
-  font-size:3em;
-  font-family:FuturaStd-Heavy;
+    font-size:1.7em;
+    font-weight: 700;
 }
 
 .pp-title-top h1 {
   font-size: 3em;
   /*margin-top: -300px;*/
   margin-bottom: 430px;
+}
+.pp-title .pp-title--logo {
+    fill:white;
+    width: 200px;
 }
 
 .reveal .pp-lifelylogo {
